@@ -11,8 +11,53 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="practicaltest01var02.eim.system.cs.pub.ro.practicaltest01var02.PracticalTest01Var02MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/edit_number1"
+        android:saveEnabled="false"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:layout_below="@id/edit_number1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity = "center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_plus"
+            android:text="+"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_minus"
+            android:text="-"/>
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_number2"
+        android:saveEnabled="false"
+        android:layout_below="@id/linear"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:text="result"
+        android:id="@+id/text_result"
+        android:layout_alignBottom="@+id/edit_number2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_second"
+        android:text="Navigate to secondondary activity"
+        android:layout_below="@id/text_result"/>
+
+
+
+
 </RelativeLayout>
